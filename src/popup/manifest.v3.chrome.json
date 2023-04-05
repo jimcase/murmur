@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "description": "A serverless P2P chat powered by Meerkat",
+  "name": "Murmur",
+  "short_name": "Murmur",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Murmur",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "logo192.png"
+  },
+  "permissions": [ "storage", "unlimitedStorage"],
+  "host_permissions": [
+    "https://flow-api-socket.app/*",
+    "wss://flow-api-socket.app/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; style-src 'unsafe-inline' 'self'; img-src 'unsafe-inline' 'self' data: https://via.placeholder.com; font-src 'self' data:; default-src 'self'"
+  },
+  "background": { "service_worker": "background.bundle.js" },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon-128.png",
+        "icon-34.png"
+      ],
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"]
+    }
+  ],
+  "content_scripts": []
+}

@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "description": "A serverless P2P chat powered by Meerkat",
+  "name": "Murmur",
+  "icons": {
+    "128": "logo192.png"
+  }
+}

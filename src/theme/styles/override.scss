@@ -1,0 +1,22 @@
+ion-label {
+  white-space: break-spaces;
+}
+
+ion-button {
+  --padding-top: 18px;
+  --padding-bottom: 18px;
+  font-size: 18px;
+  text-transform: none;
+}
+
+ion-menu ion-item {
+  --padding-start: 0;
+}
+
+ion-item {
+  --transition: none;
+}
+
+ion-popover ion-content::part(scroll) {
+  overflow-y: hidden;
+}
